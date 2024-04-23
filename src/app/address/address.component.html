@@ -1,0 +1,83 @@
+<div [formGroup]="addressForm">
+  <!-- STREET -->
+  <div class="field">
+    <label class="label">Street</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="123 Main St"
+        formControlName="street"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+
+  <!-- CITY -->
+  <div class="field">
+    <label class="label">City</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="New York"
+        formControlName="city"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+
+  <!-- STATE -->
+  <div class="field">
+    <label class="label">state</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="NY"
+        formControlName="state"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+
+  <!-- ZIP CODE -->
+  <div class="field">
+    <label class="label">Zip Code</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="12553"
+        formControlName="zipCode"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+
+  <!-- COUNTRY -->
+  <div class="field">
+    <div class="field">
+      <label class="label">Country</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="United States"
+          formControlName="country"
+          (blur)="onTouched()"
+        />
+      </div>
+    </div>
+    <label class="label">Country</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="United States"
+        formControlName="country"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+</div>
