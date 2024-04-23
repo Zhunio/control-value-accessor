@@ -1,0 +1,29 @@
+<div [formGroup]="profileForm">
+  <!-- FIRST NAME -->
+  <div class="field">
+    <label class="label">First Name</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="John"
+        formControlName="firstName"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+
+  <!-- LAST NAME -->
+  <div class="field">
+    <label class="label">Last Name</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="Doe"
+        formControlName="lastName"
+        (blur)="onTouched()"
+      />
+    </div>
+  </div>
+</div>
